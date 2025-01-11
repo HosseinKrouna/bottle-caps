@@ -1,0 +1,20 @@
+.hero_area {
+    height: 100vh;
+    background-color: #49922d;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-image: url("../img/homepage-image.png");
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .hero_area {
+        background-size: 79%;
+        background-position: bottom center;
+    }
+}
