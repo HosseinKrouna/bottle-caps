@@ -131,38 +131,47 @@ a, a:hover, a:focus {
     font-family: 'Poppins', sans-serif;
 }
 
-.slider_section .detail-box img {
-    width: 30px;
-    height: 30px;
+// .img {
+//     background-image: url(../img/kronkorken-limburger-bier.png);
+//     background-position: center;
+//     background-size: 427%;
+//     background-repeat: no-repeat;
+//     height: 212px;
+//     width: 100%;
+// }
+
+// .slider_section .detail-box a {
+//     margin-top: 45px;
+//     text-transform: uppercase;
+//     display: inline-block;
+//     padding: 10px 45px;
+//     background-color: #279112;
+//     color: #ffffff;
+//     transition: all 0.3s;
+//     border: 1px solid #279112;
+//     border-radius: 0;
+//     font-weight: 500;
+// }
+
+// .slider_section .detail-box a:hover {
+//     background-color: transparent;
+//     color: #d0ddce;
+//     box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.3);
+//     transform: translateY(-2px);
+//     border: 2px solid #279112;
+
+//   }
+
+.slider-cap {
+    width: 165px;
+    margin-top: 33px;
 }
-
-.slider_section .detail-box a {
-    margin-top: 45px;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 10px 45px;
-    background-color: #279112;
-    color: #ffffff;
-    transition: all 0.3s;
-    border: 1px solid #279112;
-    border-radius: 0;
-    font-weight: 500;
-}
-
-.slider_section .detail-box a:hover {
-    background-color: transparent;
-    color: #d0ddce;
-    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-    border: 2px solid #279112;
-
-  }
 
 
 
 .slider_section .carousel-indicators {
     position: unset;
-    margin-top: 45px;
+    margin: 0;
     list-style-type: none;
     
 }
