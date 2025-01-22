@@ -1,0 +1,10 @@
+.img-fade {
+    min-height: 400px;
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeInUp;
+}
+
+.image-content-first {
+    object-fit: cover;
+}
