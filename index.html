@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="hero_area">
-      <header class="header_section">
+      <header class="hero_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a href="index.html" class="navbar-brand">
@@ -30,38 +30,118 @@
                 class="logo"
               />
             </a>
-            <div class="custom_menu-btn">
-              <button onclick="openNav()">
-                <span class="s-1"></span>
-                <span class="s-2"></span>
-                <span class="s-3"></span>
-              </button>
-            </div>
-            <div class="overlay" id="myNav">
-              <div class="overlay-content">
-                <a href="index.html">Home</a>
-                <a href="overview.html">Übersicht</a>
+            <div class="" id="">
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"></span>
+                  <span class="s-2"></span>
+                  <span class="s-3"></span>
+                </button>
+              </div>
+              <div class="overlay" id="myNav">
+                <div class="overlay-content">
+                  <a href="index.html">Startseite</a>
+                  <a href="overview.html">Übersicht</a>
+                </div>
               </div>
             </div>
           </nav>
         </div>
       </header>
-      <main class="content">
-        <section class="headline_section">
-          <div class="container-fluid">
-            <div class="headline-box">
-              <h1 class="headline">
-                Kleiner Deckel <br />
-                <span> große Leidenschaft</span>
-              </h1>
-              <div class="overwiew-btn-box">
-                <a href="" class="overwiew-btn">Zur Sammlung</a>
+      <section class="headline_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-box">
+                <h1>
+                  Kleiner Deckel <br />
+                  <span> große Leidenschaft</span>
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+                  deleniti cum placeat culpa voluptatum eligendi adipisci ab ut
+                  mollitia laborum!
+                </p>
+                <div class="btn-box">
+                  <a href="overview.html" class="btn-1">Zur Sammlung</a>
+                </div>
               </div>
             </div>
+            <div class="col-md-6">
+              <section class="slider_section">
+                <div
+                  id="customCarousel"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  data-bs-interval="4000"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="detail-box">
+                              <!-- <h1>
+                                der
+                                <br />
+                                klassiker
+                              </h1> -->
+                              <!-- <h3>Limburger Bier</h3> -->
+                              <a href="">
+                                <img
+                                  src="../Klausur02_Web/public/img/kronkorken-binding-bier.png"
+                                  alt="Kronkorken"
+                                  class="img-fluid slider-cap"
+                                />
+                              </a>
+
+                              <!-- <div class="img"></div>
+                              <a href="overview.html" class=""
+                                >Jetzt anschauen</a
+                              > -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="detail-box">
+                              <!-- <h1>ADLER</h1> -->
+                              <a href="details-kronkorken-limburger-bier">
+                                <img
+                                  src="../Klausur02_Web/public/img/kronkorken-adler.png"
+                                  alt="Kronkorken"
+                                  class="img-fluid slider-cap"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ol class="carousel-indicators">
+                    <li
+                      data-bs-target="#customCarousel"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-bs-target="#customCarousel"
+                      data-bs-slide-to="1"
+                    ></li>
+                  </ol>
+                </div>
+              </section>
+            </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </div>
+
     <script>
       function openNav() {
         document.getElementById("myNav").classList.toggle("menu_width");

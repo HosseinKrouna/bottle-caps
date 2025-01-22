@@ -1,0 +1,129 @@
+.header_section .container-fluid {
+    padding: 0 25px;
+}
+
+.custom_nav-container {
+    z-index: 9;
+    padding: 0;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-top: 5px;
+    width: 78px;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand span {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.custom_menu-btn {
+    z-index: 9;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.menu_btn-style {
+    position: fixed;
+    right: 15px;
+    top: 7px;
+}
+
+.menu_btn-style button .s-1 {
+    transform: rotate(45deg) translateY(16px);
+}
+
+.menu_btn-style button .s-2 {
+    transform: translateX(100px);
+}
+
+.menu_btn-style button .s-3 {
+    transform: rotate(-45deg) translateY(-16px);
+}
+
+.custom_menu-btn button {
+    margin-top: 14px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.custom_menu-btn button span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 7px 0;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.custom_menu-btn .s-2 {
+    transition: all 0.1s;
+    margin-left: -5px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: #004300;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+//   .overlay .closebtn {
+//     position: absolute;
+//     top: 0;
+//     right: 30px;
+//     font-size: 60px;
+//   }
+  
+  .overlay a {
+    font-family: "Open Sans", sans-serif;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .menu_width {
+    width: 100%;
+  }
+  
+  .menu_width.overlay a {
+    opacity: 1;
+  }

@@ -1,0 +1,224 @@
+.headline_section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.headline_section .row {
+    align-items: center;
+}
+
+.headline_section .detail-box {
+    color: #ffffff;
+}
+
+.headline_section .detail-box h1 {
+    font-family: "Righteous", cursive;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.headline_section .detail-box h1 span {
+    font-size: 4rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.headline_section .detail-box .btn-box {
+    display: flex;
+    margin-top: 25px;
+}
+
+.btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px -5px 0 -5px;
+}
+
+.headline_section .detail-box .btn-box .btn-1 {
+    display: inline-block;
+    padding: 12px 45px;
+    color: #000000;
+    transition: all 0.3s;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.headline_section .detail-box .btn-box .btn-1:hover {
+    color: whitesmoke;
+}
+
+.headline_section .detail-box .btn-box a {
+    width: auto;
+}
+
+.btn-box .btn-1 {
+    display: inline-block;
+    padding: 12px 45px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Righteous", cursive;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-box a {
+    width: 175px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-box .btn-1:hover {
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+.headline_section .detail-box {
+    color: #ffffff;
+}
+
+
+
+.slider_section {
+    position: relative;
+    color: #ffffff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0 90px 0;
+}
+
+
+.slider_section #customCarousel1 {
+    width: 100%;
+}
+
+.slider_section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.slider_section .row {
+    align-items: center;
+}
+
+
+
+.slider_section .detail-box h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+// .img {
+//     background-image: url(../img/kronkorken-limburger-bier.png);
+//     background-position: center;
+//     background-size: 427%;
+//     background-repeat: no-repeat;
+//     height: 212px;
+//     width: 100%;
+// }
+
+// .slider_section .detail-box a {
+//     margin-top: 45px;
+//     text-transform: uppercase;
+//     display: inline-block;
+//     padding: 10px 45px;
+//     background-color: #279112;
+//     color: #ffffff;
+//     transition: all 0.3s;
+//     border: 1px solid #279112;
+//     border-radius: 0;
+//     font-weight: 500;
+// }
+
+// .slider_section .detail-box a:hover {
+//     background-color: transparent;
+//     color: #d0ddce;
+//     box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.3);
+//     transform: translateY(-2px);
+//     border: 2px solid #279112;
+
+//   }
+
+.slider-cap {
+    width: 165px;
+    margin-top: 33px;
+}
+
+
+
+.slider_section .carousel-indicators {
+    position: unset;
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+.slider_section .carousel-indicators li {
+    text-indent: unset;
+    border: none;
+    background-color: #252525;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    transition: all .2s;
+}
+
+.slider_section .carousel-indicators li.active {
+    background-color: #279112;
+    width: 25px;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .headline_section .detail-box {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .headline_section .detail-box .btn-box {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .headline_section .detail-box h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider_section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider_section {
+        padding-top: 45px;
+    }
+}
