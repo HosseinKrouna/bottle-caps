@@ -23,12 +23,12 @@
 
   
   .content-wrapper img {
-    display: block; /* Stellen Sie sicher, dass das Bild als Block-Level-Element behandelt wird */
+    display: block;
     margin-right: 20px;
     clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
-    width: 300px; /* Setze die Breite auf 300px oder eine beliebige andere gewünschte Breite */
-    height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
-    object-fit: cover; /* Das Bild wird so zugeschnitten, dass der Container vollständig ausgefüllt wird, ohne Verzerrung */
+    width: 300px; 
+    height: auto;
+    object-fit: cover;
     position: relative;
     
   }
