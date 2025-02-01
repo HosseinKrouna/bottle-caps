@@ -1,3 +1,8 @@
+// .sticky-top {
+//     z-index: 1000; /* Sicherstellen, dass die Navbar oben bleibt */
+//   }
+  
+
 .header_section .container-fluid {
     padding: 0 25px;
     
@@ -8,7 +13,16 @@
     padding: 0;
     height: 80px;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease; 
 }
+
+.sticky {
+    background: radial-gradient(circle, #009300 0%, #000d00 100%);
+  }
 
 .navbar-brand {
     display: flex;
@@ -17,8 +31,8 @@
 }
 
 .navbar-brand img {
-    margin-top: 5px;
-    width: 78px;
+    margin-left: 13px;
+    width: 55px;
 }
 
 a, a:hover, a:focus {
