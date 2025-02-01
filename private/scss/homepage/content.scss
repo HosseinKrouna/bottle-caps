@@ -7,47 +7,65 @@
     margin-bottom: 128px;
 }
 
+.content img {
+  width: 23px;
+  height: 23px;
+}
+
 
 .content-wrapper {
     display: flex;
     align-items: center;
     margin: 117px auto 200px;
+    flex-wrap: wrap;
+    position: relative;
   }
+
   
   .content-wrapper img {
-    
+    display: block;
     margin-right: 20px;
     clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
-    width: 100%;
+    width: 300px; 
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    
   }
-  
   .card-infobox p {
     position: relative;
-    max-width: 494px;
-    background: hsla(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.65);
     z-index: 2;
     padding: 1rem;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
-    left: -44px;
-  }
+    left: 30px;
+    top: -54px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 29px;
+}
 
   .card-infobox-reverse p {
     position: relative;
     max-width: 494px;
-    background: hsla(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.65);
     z-index: 2;
     padding: 1rem;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
-    left: 3px;
+    left: -11px;
+    top: -229px;
+    margin: 28px;
   }
 
   .card-infobox-reverse img {
     right: 20px;
     position: relative;
+    left: 89px;
   }
 
   .card-infobox h2 {
@@ -62,4 +80,44 @@
         width: auto;
         height: auto;
     }
+}
+
+
+
+.parallax {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.parallax-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.parallax-caption p {
+  font-size: 1.2rem;
+}
+
+.parallax-1 {
+  background-image: url(../img/kronkorken-herstellung.jpg);
+}
+
+.parallax-2 {
+  background-image: url(../img/geschichte-kronkorken.jpeg);
+}
+
+.parallax-3 {
+  background-image: url(../img/upcycling-kronkorken.jpg);
 }
