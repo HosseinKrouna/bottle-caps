@@ -74,15 +74,6 @@
   }
   
 
-  @media (min-width: 768px) {
-    .content-wrapper img {
-        max-width: 400px;
-        width: auto;
-        height: auto;
-    }
-}
-
-
 
 .parallax {
   background-attachment: fixed;
@@ -120,4 +111,11 @@
 
 .parallax-3 {
   background-image: url(../img/upcycling-kronkorken.jpg);
+}
+
+
+@media (max-width: 550px) {
+  .parallax-2 {
+    background-position: -4px 43px;
+  }
 }
