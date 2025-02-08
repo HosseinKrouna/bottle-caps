@@ -21,8 +21,18 @@ section,
   .section {
     scroll-margin-top: 66px;
   }
+
+  .hero-img {
+    max-width: 100%;
+  }
 }
 
+@media (min-width: 992px) {
+  .hero-img {
+      // flex: 0 0 auto;
+      width: 47.333333% !important;
+  }
+}
 
 .hero {
   width: 100%;
