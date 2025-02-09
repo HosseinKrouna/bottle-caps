@@ -71,6 +71,11 @@ section,
   display: flex;
 }
 
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 3s;
+}
+
 .hero h1 {
   margin: 0 0 20px 0;
   font-size: 48px;
