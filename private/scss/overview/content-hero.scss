@@ -133,21 +133,21 @@ section,
 .hero .wave1 use {
   animation: move-forever1 10s linear infinite;
   animation-delay: -2s;
-  fill: whitesmoke;
+  fill: #e9e4e4;
   opacity: 0.6;
 }
 
 .hero .wave2 use {
   animation: move-forever2 8s linear infinite;
   animation-delay: -2s;
-  fill: whitesmoke;
+  fill: #e9e4e4;
   opacity: 0.4;
 }
 
 .hero .wave3 use {
   animation: move-forever3 6s linear infinite;
   animation-delay: -2s;
-  fill: whitesmoke;
+  fill: #e9e4e4;
 }
 
 @keyframes move-forever1 {
