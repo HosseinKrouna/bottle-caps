@@ -118,6 +118,9 @@
     position: relative; /* Für die Positionierung der Elemente innerhalb der Card */
     overflow: hidden;
 }
+// .card-image {
+//     height: 50px;
+// }
 
 .card-image img {
     max-height: 100%;
@@ -164,6 +167,7 @@
     background: #fff;
     font-size: 14px;
     color: #636262;
+    height: 111px;
 }
 
 .card-button {
