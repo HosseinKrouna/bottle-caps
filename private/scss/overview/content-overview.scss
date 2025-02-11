@@ -117,7 +117,20 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative; /* Für die Positionierung der Elemente innerhalb der Card */
     overflow: hidden;
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
 }
+
+@keyframes fade-in {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
 // .card-image {
 //     height: 50px;
 // }
