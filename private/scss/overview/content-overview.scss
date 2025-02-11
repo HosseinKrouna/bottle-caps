@@ -1,0 +1,231 @@
+// .content {
+//     background-color: #e9e4e4;
+// }
+
+// #header{
+//     width:50vw;
+//     max-width:400px;
+//     min-width:300px;
+//     height:150px;
+//     background:url(../img/header-card-1.jpg);
+//     background-size:cover;
+//     background-position: center center;
+//     transition: all .08s linear;
+//   }
+  
+//   #profile{
+//     width:50vw;
+//     max-width:400px;
+//     min-width:300px;
+//     height:160px;
+//     background:white;
+//     position:relative;
+//     box-sizing:border-box;
+//     padding-top:40px;
+//     padding-left:25px;
+//     font-family: 'Open Sans', sans-serif;
+//     .image{
+//       position:absolute;
+//     //   border:3px solid white;
+//       top:-55px;
+//       left: 20px;
+//       height:80px;
+//       width:80px;
+//       border-radius:10px;
+//       img{
+//         width:inherit;
+//         height:inherit;
+//         border-radius:8px;
+//       }
+//     }
+//     .name{
+//       font-size:1.3rem;
+//       font-weight:500;
+//       color:#444;
+//     }
+//     .nickname{
+//       color:#888;
+//       font-size:0.9rem;
+//       padding-bottom:7px;
+//     }
+//     .location{
+//       color:#555;
+//       font-size:0.9rem;
+//       padding-left:0px;
+//       position:relative;
+//       left:-5px;
+//       .material-icons{
+//         position:relative;
+//         top:3px;
+//         font-size:1rem;
+//       }
+//     }
+//   }
+  
+//   .shadow{
+//     box-shadow: 10px 0px 10px 1px rgba(black,0.5);
+//     justify-items: center;
+//     margin: 10px;
+//   }
+  
+//   .overflow{
+//     overflow:hidden;
+
+//   }
+  
+//   .following,
+//   .followers{
+//     font-family: 'Open Sans', sans-serif;
+//     font-size:0.9rem;
+//     color:#bbb;
+//     font-weight:300;
+//   }
+//   .followers{
+//     float:right;
+//     padding-right:30px;
+//   }
+//   .bottom{
+//     margin-top:10px;
+//   }
+  
+//   .count{
+//     color:black;
+//     font-family: 'Open Sans', sans-serif;
+//     font-size:0.9rem;
+//     font-weight:700;
+//   }
+
+// .card-group {
+//     margin: 28px;
+//     gap: 10px;
+
+// }
+
+// .profile-image {
+//     width: 94px;
+//     position: relative;
+//     top: -53px;
+//     left: 11px;
+
+// }
+
+
+
+
+.card-sl {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative; /* Für die Positionierung der Elemente innerhalb der Card */
+    overflow: hidden;
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
+}
+
+@keyframes fade-in {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+// .card-image {
+//     height: 50px;
+// }
+
+.card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 8px 8px 0px 0;
+  
+    
+}
+
+.card-image img:hover {
+    transform: scale(1.1);
+}
+
+.card-action {
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    margin-right: 20px;
+    z-index: 2;
+    color: #E26D5C;
+    background: #fff;
+    border-radius: 100%;
+    padding: 7px;
+    font-size: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-action:hover {
+    color: #fff;
+    background: #258812;
+    -webkit-animation: pulse 1.5s infinite;
+}
+
+.card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.card-text {
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 14px;
+    color: #636262;
+    height: 111px;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #134d09;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: #0a2f05;
+    color: #fff;
+
+}
+
+// .kronkorken-image {
+//     background-size: 25%;
+// }
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    70% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+    }
+
+    100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+}
