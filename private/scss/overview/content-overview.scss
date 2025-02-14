@@ -204,6 +204,12 @@
 //     background-size: 25%;
 // }
 
+/* Verstecke das Zoom-Symbol in Fancybox */
+.fancybox-button--zoom {
+    display: none !important;
+}
+
+
 
 @-webkit-keyframes pulse {
     0% {
