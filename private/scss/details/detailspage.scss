@@ -1,17 +1,38 @@
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .navbar_background {
     background: radial-gradient(circle, #009300 0%, #000d00 100%);
 }
 
 .content_container {
-    margin-top: 162px
+    margin: 162px auto;
 }
 
 .star{
     color: #F6BC3E
 }
+.name{
+    font-family: "Roboto Slab", serif;
+}
 
 .category, .status, .collectors-value, .location{
     margin-left: 22px; 
+    font-family: "Poppins", serif;
+  
+
+}
+
+.company{
+    font-family: "Righteous", cursive;
+}
+
+.descreption{
+    font-family: "Poppins", serif;
 }
 
 .details {
@@ -21,3 +42,4 @@
 .details.active {
     display: block;
   }
+
