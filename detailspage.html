@@ -67,47 +67,95 @@
 
     <!-- Content start -->
     <main class="content">
-      <div class="container" id="product-section">
-        <div class="row">
-          <!-- <div class="col-md-6"> -->
-          <div class="col-md-5 col-sm-12 col-xs-12">
-            <img
-              src="../Klausur02_Web/public/img/kronkorken-binding-bier.png"
-              alt=""
-              class="img-fluid"
-            />
-          </div>
-
-          <!-- </div> -->
-          <div class="col-md-6">
-            <div class="col-md-12">
-              <h1>Binding Brauerei AG</h1>
-              <span class="label label-primary">Binding Bier</span>
-
-              <!-- <span class="monospaced">No. 1960140180</span> -->
-              <p class="description">
-                Binding Bier ist ein erfrischendes, malzbetontes Lagerbier mit
-                einer feinen Hopfennote, das für seine ausgewogene und angenehme
-                Frische bekannt ist.
-              </p>
-              <div class="drinks-catarory mb-3">
-                <i class="text-success display-2 bi bi-cup-straw mr-3"></i>
-                <span class="catagory display-5">Bier</span>
+      <div class="container">
+        <div class="details" id="binding-bier">
+          <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+              <img
+                src="../Klausur02_Web/public/img/kronkorken-binding-bier.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-12">
+                <h1 class="company">Binding Brauerei AG</h1>
+                <span class="name label label-primary">Binding Bier</span>
+                <p class="description">
+                  Binding Bier ist ein erfrischendes, malzbetontes Lagerbier mit
+                  einer feinen Hopfennote, das für seine ausgewogene und
+                  angenehme Frische bekannt ist.
+                </p>
+                <div class="drinks-catarory mb-3">
+                  <i class="text-success display-2 bi bi-cup-straw mr-3"></i>
+                  <span class="category display-5">Bier</span>
+                </div>
+                <div class="cup-status mb-3">
+                  <i class="text-success display-2 bi bi-heart-pulse"></i>
+                  <span class="status display-5">OK</span>
+                </div>
+                <div class="company-location mb-3">
+                  <i class="text-success display-2 bi bi-geo-alt-fill"></i>
+                  <span class="location display-5">Hessen</span>
+                </div>
               </div>
-              <div class="cup-status mb-3">
-                <i class="text-success display-2 bi bi-plus-slash-minus"></i>
-                <span class="status display-5">OK</span>
+              <div class="col-md-12">
+                <i class="star bi bi-star-fill"></i>
+                <i class="star bi bi-star-fill"></i>
+                <i class="star bi bi-star-fill"></i>
+                <i class="star bi bi-star-half"></i>
+                <i class="star bi bi-star"></i>
+                <span class="label label-success collectors-value"
+                  >Sammlerwert</span
+                >
               </div>
             </div>
-            <div class="col-md-12">
-              <i class="star bi bi-star-fill"></i>
-              <i class="star bi bi-star-fill"></i>
-              <i class="star bi bi-star-fill"></i>
-              <i class="star bi bi-star-half"></i>
-              <i class="star bi bi-star"></i>
-              <span class="label label-success collectors-value"
-                >Sammlerwert</span
-              >
+          </div>
+        </div>
+
+        <div class="details" id="adler-bier">
+          <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+              <img
+                src="../Klausur02_Web/public/img/kronkorken-adler.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-12">
+                <h1 class="company">Binding Brauerei AG</h1>
+                <span class="name label label-primary">Adler Bier</span>
+                <p class="description">
+                  Adler Bier ist eine traditionelle Biermarke, die für ihre
+                  qualitativ hochwertigen, handwerklich gebrauten Biere bekannt
+                  ist. Mit einem kräftigen Geschmack und einer langen
+                  Brautradition ist Adler Bier ein beliebtes Getränk für
+                  Genießer und Bierliebhaber.
+                </p>
+                <div class="drinks-catarory mb-3">
+                  <i class="text-success display-2 bi bi-cup-straw mr-3"></i>
+                  <span class="category display-5">Bier</span>
+                </div>
+                <div class="cup-status mb-3">
+                  <i class="text-success display-2 bi bi-heart-pulse"></i>
+                  <span class="status display-5">sehr Gut</span>
+                </div>
+                <div class="company-location mb-3">
+                  <i class="text-success display-2 bi bi-geo-alt-fill"></i>
+                  <span class="location display-5">Hessen</span>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <i class="star bi bi-star-fill"></i>
+                <i class="star bi bi-star-fill"></i>
+                <i class="star bi bi-star-fill"></i>
+                <i class="star bi bi-star-fill"></i>
+                <i class="star bi bi-star-half"></i>
+                <span class="label label-success collectors-value"
+                  >Sammlerwert</span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -120,6 +168,18 @@
     <!-- footer end -->
 
     <!-- JavaScript start -->
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const kronkorkenId = params.get("id");
+
+      if (kronkorkenId) {
+        const detailElement = document.getElementById(kronkorkenId);
+        if (detailElement) {
+          detailElement.classList.add("active");
+        }
+      }
+    </script>
+
     <script
       src="https://code.jquery.com/jquery-2.2.2.min.js"
       integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="

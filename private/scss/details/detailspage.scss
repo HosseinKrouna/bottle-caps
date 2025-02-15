@@ -2,14 +2,14 @@
     color: #F6BC3E
 }
 
-.catagory{
+.category, .status, .collectors-value, .location{
     margin-left: 22px; 
 }
 
-.status{
-    margin-left: 22px;  
+.details {
+    display: none;
 }
 
-.collectors-value{
-    margin-left: 22px; 
-}
+.details.active {
+    display: block;
+  }

@@ -22,14 +22,5 @@
         }
       };
 
-      // window.onscroll = function () {
-      //   var navbar = document.getElementById("navbar");
-      //   var mainContent = document.getElementById("main-content");
-      //   var mainPosition = mainContent.offsetTop;
 
-      //   if (window.scrollY > mainPosition - navbar.offsetHeight) {
-      //     navbar.classList.add("sticky");
-      //   } else {
-      //     navbar.classList.remove("sticky");
-      //   }
-      // };
+      
