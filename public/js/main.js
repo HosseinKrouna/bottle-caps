@@ -26,4 +26,24 @@
       
 
 
+        
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+               
+                  entry.target.classList.add("visible"); 
+                  entry.target.classList.add("animate__fadeInLeft"); 
+                  observer.unobserve(entry.target); 
+                }
+              });
+            },
+            { threshold: 0.5 }
+          );
+    
+         
+          document.querySelectorAll(".card-sl").forEach((card) => {
+            observer.observe(card); 
+          });
+
       
