@@ -9,7 +9,7 @@ a {
   }
   
 
-  body {
+  body, html {
     overflow-x: hidden;
     background-color: #e9e4e4  !important;
   }
@@ -25,5 +25,7 @@ a {
     font-weight: 400;
     font-style: normal;
   }
+
+  .monospaced { font-family: 'Ubuntu Mono', monospaced ; }
   
   
