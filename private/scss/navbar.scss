@@ -116,6 +116,12 @@ a, a:hover, a:focus {
     font-weight: bold;
     opacity: 0;
   }
+
+  .overlay a:hover{
+    transform: scale(1.2);
+    letter-spacing: 1px;
+    color: #008f00;
+  }
   
   .overlay-content {
     position: relative;
