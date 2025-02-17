@@ -1,3 +1,7 @@
+.headline_section .headline{
+font-size: 21px !important;
+}
+
 .slider_section {
     position: relative;
     color: #ffffff;
@@ -35,6 +39,12 @@
 .slider-cap {
     width: 165px;
     margin-top: 33px;
+}
+
+@media (min-width: 770px) {
+    .slider-cap{
+        width: 263px;
+    }
 }
 
 
