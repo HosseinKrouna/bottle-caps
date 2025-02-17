@@ -20,11 +20,28 @@
     font-family: "Roboto Slab", serif;
 }
 
-.category, .status, .collectors-value, .location{
+.category, .status, .location{
     margin-left: 22px; 
     font-family: "Poppins", serif;
-  
+    font-size: 17px; 
 
+}
+
+@media (min-width: 600px) {
+    .category, .status, .location{
+        font-size: 23px;     
+    }
+}
+
+@media (min-width: 990px) {
+    .category, .status, .location{
+        font-size: 28px;     
+    }
+}
+
+.collectors-value{
+    margin-left: 22px; 
+    font-family: "Poppins", serif;  
 }
 
 .company{
