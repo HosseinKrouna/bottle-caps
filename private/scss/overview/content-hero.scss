@@ -29,7 +29,6 @@ section,
 
 @media (min-width: 992px) {
   .hero-img {
-      // flex: 0 0 auto;
       width: 47.333333% !important;
   }
 }
@@ -71,7 +70,6 @@ section,
   display: flex;
 }
 
-/* This only changes this particular animation duration */
 .animate__animated.animate__bounceInDown {
   --animate-duration: 3s;
 }
@@ -82,7 +80,6 @@ section,
   font-weight: 700;
   line-height: 56px;
   color: #cdc5c5;
-  // color: color-mix(in srgb, var(--heading-color), transparent 30%);
 }
 
 .hero h1 span {
@@ -97,10 +94,6 @@ section,
   font-weight: 400;
   font-family: "Righteous", serif;
 }
-
-// .subline_overview {
-//   font-size: 23px;
-// }
 
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
